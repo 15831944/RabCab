@@ -4,7 +4,6 @@ using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
 using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.Runtime;
-using RabCab.Agents;
 using RabCab.Settings;
 using Exception = Autodesk.AutoCAD.Runtime.Exception;
 
@@ -38,11 +37,10 @@ namespace RabCab.Commands.AnnotationSuite
             //| CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_DimToggle()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -132,7 +130,6 @@ namespace RabCab.Commands.AnnotationSuite
                     catch (Exception e)
                     {
                         Console.WriteLine(e);
-                        MailAgent.Report(e.Message);
                     }
 
                 acTrans.Commit();

@@ -1,14 +1,15 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcBom.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/08/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
+using System;
 using System.Collections.Generic;
 using Autodesk.AutoCAD.ApplicationServices.Core;
 using Autodesk.AutoCAD.DatabaseServices;
@@ -50,16 +51,15 @@ namespace RabCab.Commands.AssemblySuite
             | CommandFlags.NoBlockEditor
             | CommandFlags.NoActionRecording
             | CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint  
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_RCBOM()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
 
-            //Check for pick-first selection -> if none, get selection      
+            //Check for pick-first selection -> if none, get selection
             var acSet = SelectionSet.FromObjectIds(acCurEd.GetFilteredSelection(Enums.DxfNameEnum._3Dsolid, false));
 
             var multAmount = 1;
@@ -136,9 +136,9 @@ namespace RabCab.Commands.AssemblySuite
                     {
                         acCurEd.SwitchToPaperSpace();
                     }
-                    catch (Exception e)
+                    catch (System.Exception e)
                     {
-                        //ignored
+                        Console.WriteLine(e);
                     }
 
 

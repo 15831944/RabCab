@@ -1,19 +1,18 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcAutoLayer.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/08/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
 using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Runtime;
-using RabCab.Agents;
 using RabCab.Extensions;
 using RabCab.Settings;
 using Application = Autodesk.AutoCAD.ApplicationServices.Core.Application;
@@ -51,11 +50,10 @@ namespace RabCab.Commands.AutomationSuite
             //| CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_AutoLayer()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             _ = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -70,7 +68,6 @@ namespace RabCab.Commands.AutomationSuite
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
         }
 

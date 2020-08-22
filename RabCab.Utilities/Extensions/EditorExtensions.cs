@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="EditorExtensions.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>03/08/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
@@ -37,7 +37,7 @@ namespace RabCab.Extensions
             return matrix3d;
         }
 
-        #region  Prompt Nested Entity Options
+        #region Prompt Nested Entity Options
 
         /// <summary>
         ///     Method to get a nested entity selection from the user.
@@ -182,7 +182,7 @@ namespace RabCab.Extensions
             };
         }
 
-        //TODO Prompt Corner 
+        //TODO Prompt Corner
 
         #region Prompt Bool Options
 
@@ -1868,7 +1868,7 @@ namespace RabCab.Extensions
                         break;
                 }
 
-                //Get the selection from the User         
+                //Get the selection from the User
                 prRes = acCurEd.GetSelection(prSelOpts);
             }
             finally
@@ -1980,7 +1980,7 @@ namespace RabCab.Extensions
                         break;
                 }
 
-                //Get the selection from the User         
+                //Get the selection from the User
                 prRes = acCurEd.GetSelection(prSelOpts);
             }
             finally
@@ -2250,7 +2250,6 @@ namespace RabCab.Extensions
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
                 return ObjectId.Null;
             }
         }
@@ -2284,7 +2283,6 @@ namespace RabCab.Extensions
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
         }
 
@@ -2305,7 +2303,6 @@ namespace RabCab.Extensions
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
         }
 
@@ -2335,7 +2332,6 @@ namespace RabCab.Extensions
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
         }
 

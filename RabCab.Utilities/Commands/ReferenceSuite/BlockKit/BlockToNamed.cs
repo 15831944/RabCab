@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Autodesk.AutoCAD.ApplicationServices;
+using Autodesk.AutoCAD.ApplicationServices.Core;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Runtime;
 using RabCab.Agents;
@@ -14,7 +10,7 @@ using Exception = System.Exception;
 
 namespace RabCab.Commands.ReferenceSuite.BlockKit
 {
-    class BlockToNamed
+    internal class BlockToNamed
     {
         /// <summary>
         /// </summary>
@@ -42,11 +38,10 @@ namespace RabCab.Commands.ReferenceSuite.BlockKit
             | CommandFlags.NoBlockEditor
             | CommandFlags.NoActionRecording
             | CommandFlags.ActionMacro
-        //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_BTON()
         {
-            if (!Agents.LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -78,7 +73,7 @@ namespace RabCab.Commands.ReferenceSuite.BlockKit
 
                     var bName = acBref.Name;
 
-                    using (DBObjectCollection dbObjCol = new DBObjectCollection())
+                    using (var dbObjCol = new DBObjectCollection())
                     {
                         acBref.Explode(dbObjCol);
 
@@ -86,7 +81,7 @@ namespace RabCab.Commands.ReferenceSuite.BlockKit
                         {
                             foreach (DBObject dbObj in dbObjCol)
                             {
-                                Entity acEnt = dbObj as Entity;
+                                var acEnt = dbObj as Entity;
 
                                 acCurDb.AppendEntity(acEnt);
 
@@ -102,9 +97,7 @@ namespace RabCab.Commands.ReferenceSuite.BlockKit
                             Console.WriteLine(e);
                             throw;
                         }
-
                     }
-
                 }
 
                 acTrans.Commit();
@@ -112,4 +105,3 @@ namespace RabCab.Commands.ReferenceSuite.BlockKit
         }
     }
 }
-

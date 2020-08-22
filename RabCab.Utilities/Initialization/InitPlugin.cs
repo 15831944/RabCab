@@ -58,10 +58,6 @@ namespace RabCab.Initialization
 
             ShowSplash();
 
-            // Initialize your plug-in application here
-            var actDia = new ActivationGui();
-            actDia.Dispose();
-
             Application.DisplayingOptionDialog += Application_DisplayingOptionDialog;
             DocumentHandlers.AddDocEvents();
         }
@@ -69,11 +65,10 @@ namespace RabCab.Initialization
 
         void IExtensionApplication.Terminate()
         {
-            if (Activated)
-            {
+            
                 Application.DisplayingOptionDialog -= Application_DisplayingOptionDialog;
                 DocumentHandlers.RemoveDocEvents();
-            }
+            
         }
 
         private void ShowSplash()
@@ -107,7 +102,7 @@ namespace RabCab.Initialization
             while (_ss.pBar.Value < _ss.pBar.Maximum)
             {
                 _ss.pBar.Value += 1;
-                Thread.Sleep(20);
+                Thread.Sleep(10);
             }
 
             Thread.Sleep(500);

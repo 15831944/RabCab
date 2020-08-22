@@ -1,19 +1,18 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcAlignViews.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/11/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using Autodesk.AutoCAD.ApplicationServices.Core;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.Runtime;
-using RabCab.Agents;
 using RabCab.Engine.Enumerators;
 using RabCab.Extensions;
 using RabCab.Settings;
@@ -48,11 +47,10 @@ namespace RabCab.Commands.AnnotationSuite
             | CommandFlags.NoBlockEditor
             | CommandFlags.NoActionRecording
             | CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_AlignViews()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;

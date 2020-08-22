@@ -1,6 +1,5 @@
 ﻿using Autodesk.AutoCAD.ApplicationServices.Core;
 using Autodesk.AutoCAD.Runtime;
-using RabCab.Agents;
 using RabCab.Settings;
 
 namespace RabCab.Commands.AnnotationSuite
@@ -33,11 +32,10 @@ namespace RabCab.Commands.AnnotationSuite
             //| CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_DimBreak()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             _ = acCurDoc.Database;
             _ = acCurDoc.Editor;

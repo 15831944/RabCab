@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcLayParts.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/08/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
@@ -53,11 +53,10 @@ namespace RabCab.Commands.AssemblySuite
             | CommandFlags.NoBlockEditor
             | CommandFlags.NoActionRecording
             | CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_LayParts()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -70,8 +69,9 @@ namespace RabCab.Commands.AssemblySuite
             keys.Add(keyFlatAssembly);
 
 
-            //Check for pick-first selection -> if none, get selection      
-            var acSet = SelectionSet.FromObjectIds(acCurEd.GetFilteredSelection(Enums.DxfNameEnum._3Dsolid, false, keys));
+            //Check for pick-first selection -> if none, get selection
+            var acSet = SelectionSet.FromObjectIds(
+                acCurEd.GetFilteredSelection(Enums.DxfNameEnum._3Dsolid, false, keys));
             if (acSet.Count <= 0) return;
 
             keyFlatAssembly.Set(ref SettingsUser.LayFlatShot);
@@ -80,8 +80,8 @@ namespace RabCab.Commands.AssemblySuite
             {
                 var layFlatShot = acCurEd.GetBool("\n Create flatshot for each side?");
                 if (layFlatShot != null)
-                SettingsUser.LayAllSidesFlatShot = layFlatShot.Value;
-              
+                    SettingsUser.LayAllSidesFlatShot = layFlatShot.Value;
+
 
                 var retainHidden = acCurEd.GetBool("\n Retain hidden lines?");
                 if (retainHidden != null) SettingsUser.RetainHiddenLines = retainHidden.Value;

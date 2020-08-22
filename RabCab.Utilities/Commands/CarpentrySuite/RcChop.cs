@@ -37,11 +37,10 @@ namespace RabCab.Commands.CarpentrySuite
             //| CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_RCChop()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -149,7 +148,6 @@ namespace RabCab.Commands.CarpentrySuite
             catch (Exception e)
             {
                 acCurEd.WriteMessage(e.Message);
-                MailAgent.Report(e.Message);
             }
             finally
             {

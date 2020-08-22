@@ -1,7 +1,6 @@
 ﻿using System;
 using Autodesk.AutoCAD.BoundaryRepresentation;
 using Autodesk.AutoCAD.Geometry;
-using RabCab.Agents;
 using RabCab.Entities.Linework;
 using Exception = System.Exception;
 
@@ -74,7 +73,6 @@ namespace RabCab.Extensions
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
         }
 
@@ -112,7 +110,6 @@ namespace RabCab.Extensions
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
 
             return vec;

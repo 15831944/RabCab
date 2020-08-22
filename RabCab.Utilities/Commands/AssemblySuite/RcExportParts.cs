@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcExportParts.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/11/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
@@ -56,11 +56,10 @@ namespace RabCab.Commands.AssemblySuite
             | CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_OutputParts()
         {
-            if (!LicensingAgent.Check()) return;
             // Get the current document
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
 

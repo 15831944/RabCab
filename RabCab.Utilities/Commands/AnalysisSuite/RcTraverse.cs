@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcTraverse.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/11/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using Autodesk.AutoCAD.ApplicationServices.Core;
@@ -49,7 +49,7 @@ namespace RabCab.Commands.AnalysisSuite
             //| CommandFlags.NoBlockEditor
             | CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_Traverse()
         {
@@ -58,8 +58,6 @@ namespace RabCab.Commands.AnalysisSuite
 
         internal static void Traverse(bool reselect = false)
         {
-            if (!LicensingAgent.Check()) return;
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -119,7 +117,7 @@ namespace RabCab.Commands.AnalysisSuite
                         //acSol.UpdateXData(Enums.Texture.Across, Enums.XDataCode.Texture, acCurDb, acTrans); //17
                         //acSol.UpdateXData(Enums.Production.MillingTwoSide, Enums.XDataCode.Production, acCurDb, acTrans); //18
                         //acSol.UpdateXData(acSol.Handle, Enums.XDataCode.ParentObject, acCurDb, acTrans); //19
-                        //acSol.UpdateXData(new List<Handle>() {acSol.Handle, acSol.Handle , acSol.Handle}, 
+                        //acSol.UpdateXData(new List<Handle>() {acSol.Handle, acSol.Handle , acSol.Handle},
                         //Enums.XDataCode.ChildObjects, acCurDb, acTrans); //20
 
                         //acCurEd.WriteMessage("\n Testing XData Read");

@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcNumParts.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/08/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
@@ -56,7 +56,6 @@ namespace RabCab.Commands.AssemblySuite
         )]
         public void Cmd_NameParts()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -77,7 +76,7 @@ namespace RabCab.Commands.AssemblySuite
             keyList.Add(keyAgentName);
             keyList.Add(keyAgentNum);
 
-            //Check for pick-first selection -> if none, get selection      
+            //Check for pick-first selection -> if none, get selection
             var acSet = SelectionSet.FromObjectIds(acCurEd.GetFilteredSelection(DxfNameEnum._3Dsolid, false, keyList));
 
             keyAgentName.Set(ref SettingsUser.NamingConvention);

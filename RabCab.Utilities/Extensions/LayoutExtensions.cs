@@ -1,8 +1,6 @@
 ﻿using System;
-using Autodesk.AutoCAD.ApplicationServices.Core;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Geometry;
-using Autodesk.AutoCAD.Runtime;
 
 namespace RabCab.Extensions
 
@@ -60,7 +58,7 @@ namespace RabCab.Extensions
 
             // If it doesn't exist, we create it
             if (!id.IsValid) id = lm.CreateLayout(name);
-            
+
             // And finally we select it
             if (select) lm.CurrentLayout = name;
 
@@ -80,10 +78,9 @@ namespace RabCab.Extensions
             ObjectId id;
             var count = 0;
             var idValid = true;
-            
+
             while (idValid)
             {
-               
                 id = lm.GetLayoutId(name + count);
                 if (id.IsValid)
                 {
@@ -372,7 +369,6 @@ namespace RabCab.Extensions
         public static void FitViewportToContent(
             this Viewport vp, Extents3d ext)
         {
-
             var scale = vp.CustomScale;
 
             // Get the dimensions of our view from the database extents

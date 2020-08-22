@@ -70,8 +70,6 @@ namespace RabCab.Settings
             Carp_EdgeBand.Value = (decimal) EdgeBandThickness;
             Carp_Explode.Value = (decimal) ExplodePower;
 
-            LabelActivate.Text = InitPlugin.Activated ? "Activated" : "Trial Version";
-
             Lay_Visible.Text = RcVisible;
             Lay_Hidden.Text = RcHidden;
             Lay_Anno.Text = RcAnno;
@@ -344,8 +342,7 @@ namespace RabCab.Settings
 
         private void LabelActivate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            var actDia = new ActivationGui();
-            actDia.ShowDialog(new AcadMainWindow());
+        
         }
     }
 }

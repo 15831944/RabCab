@@ -1,17 +1,16 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="3DsMaxAgent.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>03/28/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
 using System.Diagnostics;
-using RabCab.Agents;
 
 namespace RabCab.External
 {
@@ -35,7 +34,7 @@ namespace RabCab.External
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
+
                 return false;
             }
         }

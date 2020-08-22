@@ -6,7 +6,6 @@ using Autodesk.AutoCAD.ApplicationServices.Core;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
 using Autodesk.AutoCAD.Runtime;
-using RabCab.Agents;
 using RabCab.Extensions;
 using RabCab.Settings;
 using AcAp = Autodesk.AutoCAD.ApplicationServices.Application;
@@ -42,12 +41,10 @@ namespace RabCab.Commands.AnalysisSuite
             //| CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Dump()
         {
-            if (!LicensingAgent.Check()) return;
-
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             _ = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -86,12 +83,10 @@ namespace RabCab.Commands.AnalysisSuite
             //| CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public static void ListComProps()
         {
-            if (!LicensingAgent.Check()) return;
-
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurEd = acCurDoc.Editor;
 
@@ -185,7 +180,7 @@ namespace RabCab.Commands.AnalysisSuite
             //| CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void DumpBlockRefs()
         {

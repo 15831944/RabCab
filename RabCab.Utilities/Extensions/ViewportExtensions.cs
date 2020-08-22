@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Threading;
 using Autodesk.AutoCAD.ApplicationServices.Core;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
@@ -117,7 +118,6 @@ namespace RabCab.Extensions
             };
 
             for (var index = 0; index < scaleList.Count; index++)
-            {
                 try
                 {
                     var scale = scaleList[index];
@@ -136,7 +136,6 @@ namespace RabCab.Extensions
                     acVp.ViewDirection = curView;
                     return StandardScaleType.CustomScale;
                 }
-            }
 
             acVp.ViewDirection = curView;
             return StandardScaleType.CustomScale;
@@ -221,7 +220,6 @@ namespace RabCab.Extensions
                 var occ =
                     cm?.GetContextCollection("ACDB_ANNOTATIONSCALES");
                 if (occ != null)
-                {
                     if (!occ.HasContext(scaleName))
                     {
                         // Create a brand new scale context
@@ -234,7 +232,6 @@ namespace RabCab.Extensions
                         // Add it to the drawing's context collection
                         occ.AddContext(asc);
                     }
-                }
             }
             catch (Exception)
             {
@@ -262,12 +259,8 @@ namespace RabCab.Extensions
             var solMax = extents.MaxPoint;
 
             if (vpMin.X < solMin.X && vpMin.Y < solMin.Y)
-            {
                 if (vpMax.X > solMax.X && vpMax.Y > solMax.Y)
-                {
                     return true;
-                }
-            }
 
             return false;
         }
@@ -374,7 +367,7 @@ namespace RabCab.Extensions
         {
             LayoutManager.Current.CurrentLayout = "Model";
 
-            var ss = SelectionSet.FromObjectIds(new[] { id });
+            var ss = SelectionSet.FromObjectIds(new[] {id});
             var scaleString = GetScaleString(acVp.StandardScale);
 
             if (scaleString == "Custom" || scaleString == "1:1")
@@ -383,7 +376,7 @@ namespace RabCab.Extensions
 
             var extents = acCurDb.TileMode
                 ? new Extents3d(acCurDb.Extmin, acCurDb.Extmax)
-                : (int)Application.GetSystemVariable("CVPORT") == 1
+                : (int) Application.GetSystemVariable("CVPORT") == 1
                     ? new Extents3d(acCurDb.Pextmin, acCurDb.Pextmax)
                     : new Extents3d(acCurDb.Extmin, acCurDb.Extmax);
 
@@ -407,11 +400,12 @@ namespace RabCab.Extensions
             }
 
             LayoutManager.Current.CurrentLayout = curLayout.LayoutName;
-            System.Threading.Thread.Sleep(100);
+            Thread.Sleep(100);
 
             try
             {
-                acCurEd.Command("_VIEWBASE", "M", "T", "B", "E", "R", "ALL", "A", ss, string.Empty, "O", "C", insertPoint,
+                acCurEd.Command("_VIEWBASE", "M", "T", "B", "E", "R", "ALL", "A", ss, string.Empty, "O", "C",
+                    insertPoint,
                     "H",
                     "V", "V", "I", "Y", "TA", "Y", "N", "X", "S", scaleString, string.Empty, string.Empty);
             }
@@ -420,7 +414,6 @@ namespace RabCab.Extensions
                 Console.WriteLine(e);
                 throw;
             }
-          
         }
 
         /// <summary>

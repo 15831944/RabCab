@@ -1,19 +1,18 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="DocumentHandlers.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>03/08/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
 using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
-using RabCab.Agents;
 using RabCab.Commands.AutomationSuite;
 using RabCab.Commands.PaletteKit;
 using RabCab.Entities.Annotation;
@@ -106,7 +105,7 @@ namespace RabCab.Engine.AcSystem
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
+
                 throw;
             }
         }
@@ -145,7 +144,7 @@ namespace RabCab.Engine.AcSystem
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
+
                 throw;
             }
         }
@@ -187,7 +186,7 @@ namespace RabCab.Engine.AcSystem
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
+
                 throw;
             }
         }
@@ -225,7 +224,7 @@ namespace RabCab.Engine.AcSystem
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
+
                 throw;
             }
         }

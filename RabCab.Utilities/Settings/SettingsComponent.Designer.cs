@@ -92,6 +92,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.NumLStep = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.LayerDelim = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.SortMix = new System.Windows.Forms.CheckBox();
             this.Check_ResetPartCount = new System.Windows.Forms.CheckBox();
@@ -102,26 +104,38 @@
             this.SortLayer = new System.Windows.Forms.CheckBox();
             this.SortColor = new System.Windows.Forms.CheckBox();
             this.Annotation = new System.Windows.Forms.TabPage();
-            this.label26 = new System.Windows.Forms.Label();
-            this.TPage = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ViewTemplateBox = new System.Windows.Forms.TextBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.CPage = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.AutoLay_Commands = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.Lay_Holes = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.Lay_Anno = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.Lay_Hidden = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.TPage = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.Check_DeleteMark = new System.Windows.Forms.CheckBox();
+            this.MarkHeight = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.Check_PartLeader = new System.Windows.Forms.CheckBox();
+            this.PartTextHeight = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.Lay_Visible = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.Lay_Hidden = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Lay_Anno = new System.Windows.Forms.TextBox();
+            this.AutoLay_Commands = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Lay_Holes = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.Check_AutoLayer = new System.Windows.Forms.CheckBox();
             this.label17 = new System.Windows.Forms.Label();
             this.DSpace = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.VSpace = new System.Windows.Forms.NumericUpDown();
-            this.label13 = new System.Windows.Forms.Label();
-            this.MarkHeight = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BOM_Qty = new System.Windows.Forms.CheckBox();
             this.BOM_ProductionType = new System.Windows.Forms.CheckBox();
@@ -135,8 +149,16 @@
             this.Bom_Layer = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.BOM_Title = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.PartTextHeight = new System.Windows.Forms.NumericUpDown();
+            this.BOM_RowHeight = new System.Windows.Forms.NumericUpDown();
+            this.BOM_ColWidth = new System.Windows.Forms.NumericUpDown();
+            this.BOM_TextHeight = new System.Windows.Forms.NumericUpDown();
+            this.BOM_XOffset = new System.Windows.Forms.NumericUpDown();
+            this.BOM_YOffset = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.A_TR = new System.Windows.Forms.RadioButton();
             this.A_TC = new System.Windows.Forms.RadioButton();
@@ -146,47 +168,22 @@
             this.A_BL = new System.Windows.Forms.RadioButton();
             this.A_LC = new System.Windows.Forms.RadioButton();
             this.A_TL = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BOM_YOffset = new System.Windows.Forms.NumericUpDown();
-            this.BOM_XOffset = new System.Windows.Forms.NumericUpDown();
-            this.BOM_TextHeight = new System.Windows.Forms.NumericUpDown();
-            this.BOM_ColWidth = new System.Windows.Forms.NumericUpDown();
-            this.BOM_RowHeight = new System.Windows.Forms.NumericUpDown();
-            this.Check_AutoLayer = new System.Windows.Forms.CheckBox();
-            this.Check_PartLeader = new System.Windows.Forms.CheckBox();
+            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape12 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape9 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape6 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.colorDialog = new System.Windows.Forms.ColorDialog();
-            this.label19 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.Check_DeleteMark = new System.Windows.Forms.CheckBox();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.ViewTemplateBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lineShape6 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape9 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape12 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.LayerDelim = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.LabelActivate = new System.Windows.Forms.LinkLabel();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Common.SuspendLayout();
@@ -221,25 +218,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumLStep)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.Annotation.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MarkHeight)).BeginInit();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PartTextHeight)).BeginInit();
+            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DSpace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VSpace)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MarkHeight)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PartTextHeight)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BOM_YOffset)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOM_XOffset)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOM_TextHeight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOM_ColWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOM_RowHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOM_ColWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOM_TextHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOM_XOffset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOM_YOffset)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -1129,6 +1126,23 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Sorting Options";
             // 
+            // LayerDelim
+            // 
+            this.LayerDelim.Location = new System.Drawing.Point(9, 61);
+            this.LayerDelim.MaxLength = 1;
+            this.LayerDelim.Name = "LayerDelim";
+            this.LayerDelim.Size = new System.Drawing.Size(38, 20);
+            this.LayerDelim.TabIndex = 72;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(53, 64);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(80, 13);
+            this.label19.TabIndex = 71;
+            this.label19.Text = "Layer Delimeter";
+            // 
             // label45
             // 
             this.label45.AutoSize = true;
@@ -1146,7 +1160,7 @@
             this.SortMix.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SortMix.Location = new System.Drawing.Point(9, 227);
             this.SortMix.Name = "SortMix";
-            this.SortMix.Size = new System.Drawing.Size(65, 17);
+            this.SortMix.Size = new System.Drawing.Size(66, 17);
             this.SortMix.TabIndex = 31;
             this.SortMix.Text = "Mix Saw";
             this.SortMix.UseVisualStyleBackColor = true;
@@ -1249,21 +1263,54 @@
             this.Annotation.Text = "Annotation";
             this.Annotation.UseVisualStyleBackColor = true;
             // 
-            // label26
+            // groupBox13
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(107, 48);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(31, 13);
-            this.label26.TabIndex = 59;
-            this.label26.Text = "Total";
+            this.groupBox13.Controls.Add(this.button1);
+            this.groupBox13.Controls.Add(this.ViewTemplateBox);
+            this.groupBox13.Location = new System.Drawing.Point(5, 296);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(643, 57);
+            this.groupBox13.TabIndex = 63;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "View Generation Template";
             // 
-            // TPage
+            // button1
             // 
-            this.TPage.Location = new System.Drawing.Point(6, 45);
-            this.TPage.Name = "TPage";
-            this.TPage.Size = new System.Drawing.Size(95, 20);
-            this.TPage.TabIndex = 58;
+            this.button1.Location = new System.Drawing.Point(595, 21);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(41, 27);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Load";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // ViewTemplateBox
+            // 
+            this.ViewTemplateBox.Enabled = false;
+            this.ViewTemplateBox.Location = new System.Drawing.Point(9, 25);
+            this.ViewTemplateBox.Name = "ViewTemplateBox";
+            this.ViewTemplateBox.Size = new System.Drawing.Size(580, 20);
+            this.ViewTemplateBox.TabIndex = 0;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.CPage);
+            this.groupBox12.Controls.Add(this.label27);
+            this.groupBox12.Controls.Add(this.TPage);
+            this.groupBox12.Controls.Add(this.label26);
+            this.groupBox12.Location = new System.Drawing.Point(493, 166);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(155, 73);
+            this.groupBox12.TabIndex = 62;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Page Number";
+            // 
+            // CPage
+            // 
+            this.CPage.Location = new System.Drawing.Point(6, 19);
+            this.CPage.Name = "CPage";
+            this.CPage.Size = new System.Drawing.Size(95, 20);
+            this.CPage.TabIndex = 56;
             // 
             // label27
             // 
@@ -1274,78 +1321,158 @@
             this.label27.TabIndex = 57;
             this.label27.Text = "Current";
             // 
-            // CPage
+            // TPage
             // 
-            this.CPage.Location = new System.Drawing.Point(6, 19);
-            this.CPage.Name = "CPage";
-            this.CPage.Size = new System.Drawing.Size(95, 20);
-            this.CPage.TabIndex = 56;
+            this.TPage.Location = new System.Drawing.Point(6, 45);
+            this.TPage.Name = "TPage";
+            this.TPage.Size = new System.Drawing.Size(95, 20);
+            this.TPage.TabIndex = 58;
             // 
-            // label25
+            // label26
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(6, 156);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(110, 13);
-            this.label25.TabIndex = 55;
-            this.label25.Text = "AutoLayer Commands";
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(107, 48);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(31, 13);
+            this.label26.TabIndex = 59;
+            this.label26.Text = "Total";
             // 
-            // AutoLay_Commands
+            // groupBox11
             // 
-            this.AutoLay_Commands.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AutoLay_Commands.Location = new System.Drawing.Point(9, 174);
-            this.AutoLay_Commands.Multiline = true;
-            this.AutoLay_Commands.Name = "AutoLay_Commands";
-            this.AutoLay_Commands.Size = new System.Drawing.Size(176, 101);
-            this.AutoLay_Commands.TabIndex = 54;
+            this.groupBox11.Controls.Add(this.Check_DeleteMark);
+            this.groupBox11.Controls.Add(this.MarkHeight);
+            this.groupBox11.Controls.Add(this.label13);
+            this.groupBox11.Location = new System.Drawing.Point(492, 85);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(156, 75);
+            this.groupBox11.TabIndex = 61;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Part Mark";
             // 
-            // label23
+            // Check_DeleteMark
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 102);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(34, 13);
-            this.label23.TabIndex = 51;
-            this.label23.Text = "Holes";
+            this.Check_DeleteMark.AutoSize = true;
+            this.Check_DeleteMark.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Check_DeleteMark.Location = new System.Drawing.Point(6, 19);
+            this.Check_DeleteMark.Name = "Check_DeleteMark";
+            this.Check_DeleteMark.Size = new System.Drawing.Size(96, 17);
+            this.Check_DeleteMark.TabIndex = 62;
+            this.Check_DeleteMark.Text = "Delete Existing";
+            this.Check_DeleteMark.UseVisualStyleBackColor = true;
             // 
-            // Lay_Holes
+            // MarkHeight
             // 
-            this.Lay_Holes.Location = new System.Drawing.Point(49, 98);
-            this.Lay_Holes.Name = "Lay_Holes";
-            this.Lay_Holes.Size = new System.Drawing.Size(127, 20);
-            this.Lay_Holes.TabIndex = 50;
+            this.MarkHeight.DecimalPlaces = 3;
+            this.MarkHeight.Location = new System.Drawing.Point(6, 42);
+            this.MarkHeight.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.MarkHeight.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.MarkHeight.Name = "MarkHeight";
+            this.MarkHeight.Size = new System.Drawing.Size(71, 20);
+            this.MarkHeight.TabIndex = 25;
+            this.MarkHeight.Value = new decimal(new int[] {
+            9,
+            0,
+            0,
+            131072});
             // 
-            // label22
+            // label13
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 76);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(32, 13);
-            this.label22.TabIndex = 49;
-            this.label22.Text = "Anno";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(83, 46);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(62, 13);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Text Height";
             // 
-            // Lay_Anno
+            // groupBox10
             // 
-            this.Lay_Anno.Location = new System.Drawing.Point(49, 72);
-            this.Lay_Anno.Name = "Lay_Anno";
-            this.Lay_Anno.Size = new System.Drawing.Size(127, 20);
-            this.Lay_Anno.TabIndex = 48;
+            this.groupBox10.Controls.Add(this.Check_PartLeader);
+            this.groupBox10.Controls.Add(this.PartTextHeight);
+            this.groupBox10.Controls.Add(this.label9);
+            this.groupBox10.Location = new System.Drawing.Point(492, 6);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(156, 73);
+            this.groupBox10.TabIndex = 60;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Part Finder";
             // 
-            // label21
+            // Check_PartLeader
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 50);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 13);
-            this.label21.TabIndex = 47;
-            this.label21.Text = "Hidden";
+            this.Check_PartLeader.AutoSize = true;
+            this.Check_PartLeader.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Check_PartLeader.Location = new System.Drawing.Point(6, 19);
+            this.Check_PartLeader.Name = "Check_PartLeader";
+            this.Check_PartLeader.Size = new System.Drawing.Size(119, 17);
+            this.Check_PartLeader.TabIndex = 6;
+            this.Check_PartLeader.Text = "Part Finder Enabled";
+            this.Check_PartLeader.UseVisualStyleBackColor = true;
             // 
-            // Lay_Hidden
+            // PartTextHeight
             // 
-            this.Lay_Hidden.Location = new System.Drawing.Point(49, 46);
-            this.Lay_Hidden.Name = "Lay_Hidden";
-            this.Lay_Hidden.Size = new System.Drawing.Size(127, 20);
-            this.Lay_Hidden.TabIndex = 46;
+            this.PartTextHeight.DecimalPlaces = 3;
+            this.PartTextHeight.Increment = new decimal(new int[] {
+            625,
+            0,
+            0,
+            262144});
+            this.PartTextHeight.Location = new System.Drawing.Point(6, 42);
+            this.PartTextHeight.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.PartTextHeight.Name = "PartTextHeight";
+            this.PartTextHeight.Size = new System.Drawing.Size(61, 20);
+            this.PartTextHeight.TabIndex = 22;
+            this.PartTextHeight.Value = new decimal(new int[] {
+            125,
+            0,
+            0,
+            196608});
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(73, 45);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 13);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Text Height";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.Lay_Visible);
+            this.groupBox8.Controls.Add(this.label20);
+            this.groupBox8.Controls.Add(this.Lay_Hidden);
+            this.groupBox8.Controls.Add(this.label21);
+            this.groupBox8.Controls.Add(this.Lay_Anno);
+            this.groupBox8.Controls.Add(this.AutoLay_Commands);
+            this.groupBox8.Controls.Add(this.label25);
+            this.groupBox8.Controls.Add(this.label22);
+            this.groupBox8.Controls.Add(this.Lay_Holes);
+            this.groupBox8.Controls.Add(this.label23);
+            this.groupBox8.Controls.Add(this.Check_AutoLayer);
+            this.groupBox8.Location = new System.Drawing.Point(5, 6);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(191, 284);
+            this.groupBox8.TabIndex = 35;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Layer Options";
+            // 
+            // Lay_Visible
+            // 
+            this.Lay_Visible.Location = new System.Drawing.Point(49, 20);
+            this.Lay_Visible.Name = "Lay_Visible";
+            this.Lay_Visible.Size = new System.Drawing.Size(127, 20);
+            this.Lay_Visible.TabIndex = 44;
             // 
             // label20
             // 
@@ -1356,12 +1483,84 @@
             this.label20.TabIndex = 45;
             this.label20.Text = "Visible";
             // 
-            // Lay_Visible
+            // Lay_Hidden
             // 
-            this.Lay_Visible.Location = new System.Drawing.Point(49, 20);
-            this.Lay_Visible.Name = "Lay_Visible";
-            this.Lay_Visible.Size = new System.Drawing.Size(127, 20);
-            this.Lay_Visible.TabIndex = 44;
+            this.Lay_Hidden.Location = new System.Drawing.Point(49, 46);
+            this.Lay_Hidden.Name = "Lay_Hidden";
+            this.Lay_Hidden.Size = new System.Drawing.Size(127, 20);
+            this.Lay_Hidden.TabIndex = 46;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 50);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(41, 13);
+            this.label21.TabIndex = 47;
+            this.label21.Text = "Hidden";
+            // 
+            // Lay_Anno
+            // 
+            this.Lay_Anno.Location = new System.Drawing.Point(49, 72);
+            this.Lay_Anno.Name = "Lay_Anno";
+            this.Lay_Anno.Size = new System.Drawing.Size(127, 20);
+            this.Lay_Anno.TabIndex = 48;
+            // 
+            // AutoLay_Commands
+            // 
+            this.AutoLay_Commands.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AutoLay_Commands.Location = new System.Drawing.Point(9, 174);
+            this.AutoLay_Commands.Multiline = true;
+            this.AutoLay_Commands.Name = "AutoLay_Commands";
+            this.AutoLay_Commands.Size = new System.Drawing.Size(176, 101);
+            this.AutoLay_Commands.TabIndex = 54;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(6, 156);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(110, 13);
+            this.label25.TabIndex = 55;
+            this.label25.Text = "AutoLayer Commands";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(6, 76);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(32, 13);
+            this.label22.TabIndex = 49;
+            this.label22.Text = "Anno";
+            // 
+            // Lay_Holes
+            // 
+            this.Lay_Holes.Location = new System.Drawing.Point(49, 98);
+            this.Lay_Holes.Name = "Lay_Holes";
+            this.Lay_Holes.Size = new System.Drawing.Size(127, 20);
+            this.Lay_Holes.TabIndex = 50;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 102);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(34, 13);
+            this.label23.TabIndex = 51;
+            this.label23.Text = "Holes";
+            // 
+            // Check_AutoLayer
+            // 
+            this.Check_AutoLayer.AutoSize = true;
+            this.Check_AutoLayer.Checked = true;
+            this.Check_AutoLayer.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Check_AutoLayer.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Check_AutoLayer.Location = new System.Drawing.Point(9, 126);
+            this.Check_AutoLayer.Name = "Check_AutoLayer";
+            this.Check_AutoLayer.Size = new System.Drawing.Size(119, 17);
+            this.Check_AutoLayer.TabIndex = 7;
+            this.Check_AutoLayer.Text = "Auto Layer Enabled";
+            this.Check_AutoLayer.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -1416,38 +1615,6 @@
             0,
             0,
             0});
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(83, 46);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 13);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "Text Height";
-            // 
-            // MarkHeight
-            // 
-            this.MarkHeight.DecimalPlaces = 3;
-            this.MarkHeight.Location = new System.Drawing.Point(6, 42);
-            this.MarkHeight.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.MarkHeight.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.MarkHeight.Name = "MarkHeight";
-            this.MarkHeight.Size = new System.Drawing.Size(71, 20);
-            this.MarkHeight.TabIndex = 25;
-            this.MarkHeight.Value = new decimal(new int[] {
-            9,
-            0,
-            0,
-            131072});
             // 
             // groupBox2
             // 
@@ -1628,37 +1795,165 @@
             this.BOM_Title.TabIndex = 0;
             this.BOM_Title.Text = "Bill Of Materials";
             // 
-            // label9
+            // BOM_RowHeight
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(73, 45);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 13);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Text Height";
-            // 
-            // PartTextHeight
-            // 
-            this.PartTextHeight.DecimalPlaces = 3;
-            this.PartTextHeight.Increment = new decimal(new int[] {
-            625,
+            this.BOM_RowHeight.DecimalPlaces = 3;
+            this.BOM_RowHeight.Location = new System.Drawing.Point(126, 45);
+            this.BOM_RowHeight.Maximum = new decimal(new int[] {
+            1000,
             0,
             0,
-            262144});
-            this.PartTextHeight.Location = new System.Drawing.Point(6, 42);
-            this.PartTextHeight.Minimum = new decimal(new int[] {
+            0});
+            this.BOM_RowHeight.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.PartTextHeight.Name = "PartTextHeight";
-            this.PartTextHeight.Size = new System.Drawing.Size(61, 20);
-            this.PartTextHeight.TabIndex = 22;
-            this.PartTextHeight.Value = new decimal(new int[] {
+            this.BOM_RowHeight.Name = "BOM_RowHeight";
+            this.BOM_RowHeight.Size = new System.Drawing.Size(71, 20);
+            this.BOM_RowHeight.TabIndex = 8;
+            this.BOM_RowHeight.Value = new decimal(new int[] {
+            35,
+            0,
+            0,
+            196608});
+            // 
+            // BOM_ColWidth
+            // 
+            this.BOM_ColWidth.DecimalPlaces = 3;
+            this.BOM_ColWidth.Location = new System.Drawing.Point(126, 71);
+            this.BOM_ColWidth.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.BOM_ColWidth.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.BOM_ColWidth.Name = "BOM_ColWidth";
+            this.BOM_ColWidth.Size = new System.Drawing.Size(71, 20);
+            this.BOM_ColWidth.TabIndex = 9;
+            this.BOM_ColWidth.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            // 
+            // BOM_TextHeight
+            // 
+            this.BOM_TextHeight.DecimalPlaces = 3;
+            this.BOM_TextHeight.Location = new System.Drawing.Point(126, 97);
+            this.BOM_TextHeight.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.BOM_TextHeight.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.BOM_TextHeight.Name = "BOM_TextHeight";
+            this.BOM_TextHeight.Size = new System.Drawing.Size(71, 20);
+            this.BOM_TextHeight.TabIndex = 10;
+            this.BOM_TextHeight.Value = new decimal(new int[] {
+            9,
+            0,
+            0,
+            131072});
+            // 
+            // BOM_XOffset
+            // 
+            this.BOM_XOffset.DecimalPlaces = 3;
+            this.BOM_XOffset.Location = new System.Drawing.Point(126, 123);
+            this.BOM_XOffset.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.BOM_XOffset.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.BOM_XOffset.Name = "BOM_XOffset";
+            this.BOM_XOffset.Size = new System.Drawing.Size(71, 20);
+            this.BOM_XOffset.TabIndex = 11;
+            this.BOM_XOffset.Value = new decimal(new int[] {
             125,
             0,
             0,
             196608});
+            // 
+            // BOM_YOffset
+            // 
+            this.BOM_YOffset.DecimalPlaces = 3;
+            this.BOM_YOffset.Location = new System.Drawing.Point(126, 149);
+            this.BOM_YOffset.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.BOM_YOffset.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.BOM_YOffset.Name = "BOM_YOffset";
+            this.BOM_YOffset.Size = new System.Drawing.Size(71, 20);
+            this.BOM_YOffset.TabIndex = 12;
+            this.BOM_YOffset.Value = new decimal(new int[] {
+            125,
+            0,
+            0,
+            196608});
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(204, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Row Height";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(204, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Column Width";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(204, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Text Height";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(204, 125);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "X Offset";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(204, 151);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 13);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Y Offset";
             // 
             // groupBox1
             // 
@@ -1752,189 +2047,95 @@
             this.A_TL.TabIndex = 0;
             this.A_TL.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // shapeContainer3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(204, 151);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 13);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Y Offset";
+            this.shapeContainer3.Location = new System.Drawing.Point(3, 16);
+            this.shapeContainer3.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer3.Name = "shapeContainer3";
+            this.shapeContainer3.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape12,
+            this.lineShape11,
+            this.lineShape10,
+            this.lineShape9,
+            this.lineShape8,
+            this.lineShape5,
+            this.lineShape7,
+            this.lineShape6});
+            this.shapeContainer3.Size = new System.Drawing.Size(145, 74);
+            this.shapeContainer3.TabIndex = 25;
+            this.shapeContainer3.TabStop = false;
             // 
-            // label4
+            // lineShape12
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(204, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "X Offset";
+            this.lineShape12.BorderWidth = 2;
+            this.lineShape12.Name = "lineShape12";
+            this.lineShape12.X1 = 9;
+            this.lineShape12.X2 = 133;
+            this.lineShape12.Y1 = 48;
+            this.lineShape12.Y2 = 48;
             // 
-            // label3
+            // lineShape11
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(204, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Text Height";
+            this.lineShape11.BorderWidth = 2;
+            this.lineShape11.Name = "lineShape11";
+            this.lineShape11.X1 = 9;
+            this.lineShape11.X2 = 135;
+            this.lineShape11.Y1 = 34;
+            this.lineShape11.Y2 = 34;
             // 
-            // label2
+            // lineShape10
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(204, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Column Width";
+            this.lineShape10.BorderWidth = 2;
+            this.lineShape10.Name = "lineShape10";
+            this.lineShape10.X1 = 9;
+            this.lineShape10.X2 = 133;
+            this.lineShape10.Y1 = 20;
+            this.lineShape10.Y2 = 20;
             // 
-            // label1
+            // lineShape9
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(204, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Row Height";
+            this.lineShape9.BorderWidth = 2;
+            this.lineShape9.Name = "lineShape9";
+            this.lineShape9.X1 = 9;
+            this.lineShape9.X2 = 135;
+            this.lineShape9.Y1 = 6;
+            this.lineShape9.Y2 = 6;
             // 
-            // BOM_YOffset
+            // lineShape8
             // 
-            this.BOM_YOffset.DecimalPlaces = 3;
-            this.BOM_YOffset.Location = new System.Drawing.Point(126, 149);
-            this.BOM_YOffset.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.BOM_YOffset.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.BOM_YOffset.Name = "BOM_YOffset";
-            this.BOM_YOffset.Size = new System.Drawing.Size(71, 20);
-            this.BOM_YOffset.TabIndex = 12;
-            this.BOM_YOffset.Value = new decimal(new int[] {
-            125,
-            0,
-            0,
-            196608});
+            this.lineShape8.BorderWidth = 2;
+            this.lineShape8.Name = "lineShape8";
+            this.lineShape8.X1 = 132;
+            this.lineShape8.X2 = 132;
+            this.lineShape8.Y1 = 1;
+            this.lineShape8.Y2 = 67;
             // 
-            // BOM_XOffset
+            // lineShape5
             // 
-            this.BOM_XOffset.DecimalPlaces = 3;
-            this.BOM_XOffset.Location = new System.Drawing.Point(126, 123);
-            this.BOM_XOffset.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.BOM_XOffset.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.BOM_XOffset.Name = "BOM_XOffset";
-            this.BOM_XOffset.Size = new System.Drawing.Size(71, 20);
-            this.BOM_XOffset.TabIndex = 11;
-            this.BOM_XOffset.Value = new decimal(new int[] {
-            125,
-            0,
-            0,
-            196608});
+            this.lineShape5.BorderWidth = 2;
+            this.lineShape5.Name = "lineShape5";
+            this.lineShape5.X1 = 72;
+            this.lineShape5.X2 = 72;
+            this.lineShape5.Y1 = -3;
+            this.lineShape5.Y2 = 63;
             // 
-            // BOM_TextHeight
+            // lineShape7
             // 
-            this.BOM_TextHeight.DecimalPlaces = 3;
-            this.BOM_TextHeight.Location = new System.Drawing.Point(126, 97);
-            this.BOM_TextHeight.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.BOM_TextHeight.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.BOM_TextHeight.Name = "BOM_TextHeight";
-            this.BOM_TextHeight.Size = new System.Drawing.Size(71, 20);
-            this.BOM_TextHeight.TabIndex = 10;
-            this.BOM_TextHeight.Value = new decimal(new int[] {
-            9,
-            0,
-            0,
-            131072});
+            this.lineShape7.BorderWidth = 2;
+            this.lineShape7.Name = "lineShape7";
+            this.lineShape7.X1 = 8;
+            this.lineShape7.X2 = 134;
+            this.lineShape7.Y1 = 63;
+            this.lineShape7.Y2 = 63;
             // 
-            // BOM_ColWidth
+            // lineShape6
             // 
-            this.BOM_ColWidth.DecimalPlaces = 3;
-            this.BOM_ColWidth.Location = new System.Drawing.Point(126, 71);
-            this.BOM_ColWidth.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.BOM_ColWidth.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.BOM_ColWidth.Name = "BOM_ColWidth";
-            this.BOM_ColWidth.Size = new System.Drawing.Size(71, 20);
-            this.BOM_ColWidth.TabIndex = 9;
-            this.BOM_ColWidth.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            131072});
-            // 
-            // BOM_RowHeight
-            // 
-            this.BOM_RowHeight.DecimalPlaces = 3;
-            this.BOM_RowHeight.Location = new System.Drawing.Point(126, 45);
-            this.BOM_RowHeight.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.BOM_RowHeight.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.BOM_RowHeight.Name = "BOM_RowHeight";
-            this.BOM_RowHeight.Size = new System.Drawing.Size(71, 20);
-            this.BOM_RowHeight.TabIndex = 8;
-            this.BOM_RowHeight.Value = new decimal(new int[] {
-            35,
-            0,
-            0,
-            196608});
-            // 
-            // Check_AutoLayer
-            // 
-            this.Check_AutoLayer.AutoSize = true;
-            this.Check_AutoLayer.Checked = true;
-            this.Check_AutoLayer.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Check_AutoLayer.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Check_AutoLayer.Location = new System.Drawing.Point(9, 126);
-            this.Check_AutoLayer.Name = "Check_AutoLayer";
-            this.Check_AutoLayer.Size = new System.Drawing.Size(119, 17);
-            this.Check_AutoLayer.TabIndex = 7;
-            this.Check_AutoLayer.Text = "Auto Layer Enabled";
-            this.Check_AutoLayer.UseVisualStyleBackColor = true;
-            // 
-            // Check_PartLeader
-            // 
-            this.Check_PartLeader.AutoSize = true;
-            this.Check_PartLeader.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Check_PartLeader.Location = new System.Drawing.Point(6, 19);
-            this.Check_PartLeader.Name = "Check_PartLeader";
-            this.Check_PartLeader.Size = new System.Drawing.Size(119, 17);
-            this.Check_PartLeader.TabIndex = 6;
-            this.Check_PartLeader.Text = "Part Finder Enabled";
-            this.Check_PartLeader.UseVisualStyleBackColor = true;
+            this.lineShape6.BorderWidth = 2;
+            this.lineShape6.Name = "lineShape6";
+            this.lineShape6.X1 = 9;
+            this.lineShape6.X2 = 9;
+            this.lineShape6.Y1 = 1;
+            this.lineShape6.Y2 = 67;
             // 
             // tableLayoutPanel2
             // 
@@ -1968,258 +2169,26 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.label43, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label39, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel1, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel2, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.LabelActivate, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.linkLabel2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.linkLabel1, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 3;
+            this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(492, 53);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
-            // label43
-            // 
-            this.label43.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(3, 37);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(140, 13);
-            this.label43.TabIndex = 4;
-            this.label43.Text = "Copyright - CraterSpace Inc.";
-            // 
-            // label39
-            // 
-            this.label39.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(3, 2);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(46, 13);
-            this.label39.TabIndex = 0;
-            this.label39.Text = "RabCab";
-            // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog1";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(53, 64);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(80, 13);
-            this.label19.TabIndex = 71;
-            this.label19.Text = "Layer Delimeter";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.Lay_Visible);
-            this.groupBox8.Controls.Add(this.label20);
-            this.groupBox8.Controls.Add(this.Lay_Hidden);
-            this.groupBox8.Controls.Add(this.label21);
-            this.groupBox8.Controls.Add(this.Lay_Anno);
-            this.groupBox8.Controls.Add(this.AutoLay_Commands);
-            this.groupBox8.Controls.Add(this.label25);
-            this.groupBox8.Controls.Add(this.label22);
-            this.groupBox8.Controls.Add(this.Lay_Holes);
-            this.groupBox8.Controls.Add(this.label23);
-            this.groupBox8.Controls.Add(this.Check_AutoLayer);
-            this.groupBox8.Location = new System.Drawing.Point(5, 6);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(191, 284);
-            this.groupBox8.TabIndex = 35;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Layer Options";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.Check_PartLeader);
-            this.groupBox10.Controls.Add(this.PartTextHeight);
-            this.groupBox10.Controls.Add(this.label9);
-            this.groupBox10.Location = new System.Drawing.Point(492, 6);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(156, 73);
-            this.groupBox10.TabIndex = 60;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Part Finder";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.Check_DeleteMark);
-            this.groupBox11.Controls.Add(this.MarkHeight);
-            this.groupBox11.Controls.Add(this.label13);
-            this.groupBox11.Location = new System.Drawing.Point(492, 85);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(156, 75);
-            this.groupBox11.TabIndex = 61;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Part Mark";
-            // 
-            // Check_DeleteMark
-            // 
-            this.Check_DeleteMark.AutoSize = true;
-            this.Check_DeleteMark.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Check_DeleteMark.Location = new System.Drawing.Point(6, 19);
-            this.Check_DeleteMark.Name = "Check_DeleteMark";
-            this.Check_DeleteMark.Size = new System.Drawing.Size(96, 17);
-            this.Check_DeleteMark.TabIndex = 62;
-            this.Check_DeleteMark.Text = "Delete Existing";
-            this.Check_DeleteMark.UseVisualStyleBackColor = true;
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.CPage);
-            this.groupBox12.Controls.Add(this.label27);
-            this.groupBox12.Controls.Add(this.TPage);
-            this.groupBox12.Controls.Add(this.label26);
-            this.groupBox12.Location = new System.Drawing.Point(493, 166);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(155, 73);
-            this.groupBox12.TabIndex = 62;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Page Number";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.button1);
-            this.groupBox13.Controls.Add(this.ViewTemplateBox);
-            this.groupBox13.Location = new System.Drawing.Point(5, 296);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(643, 57);
-            this.groupBox13.TabIndex = 63;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "View Generation Template";
-            // 
-            // ViewTemplateBox
-            // 
-            this.ViewTemplateBox.Enabled = false;
-            this.ViewTemplateBox.Location = new System.Drawing.Point(9, 25);
-            this.ViewTemplateBox.Name = "ViewTemplateBox";
-            this.ViewTemplateBox.Size = new System.Drawing.Size(580, 20);
-            this.ViewTemplateBox.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(595, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(41, 27);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Load";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // lineShape6
-            // 
-            this.lineShape6.BorderWidth = 2;
-            this.lineShape6.Name = "lineShape6";
-            this.lineShape6.X1 = 9;
-            this.lineShape6.X2 = 9;
-            this.lineShape6.Y1 = 1;
-            this.lineShape6.Y2 = 67;
-            // 
-            // lineShape7
-            // 
-            this.lineShape7.BorderWidth = 2;
-            this.lineShape7.Name = "lineShape7";
-            this.lineShape7.X1 = 8;
-            this.lineShape7.X2 = 134;
-            this.lineShape7.Y1 = 63;
-            this.lineShape7.Y2 = 63;
-            // 
-            // shapeContainer3
-            // 
-            this.shapeContainer3.Location = new System.Drawing.Point(3, 16);
-            this.shapeContainer3.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer3.Name = "shapeContainer3";
-            this.shapeContainer3.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape12,
-            this.lineShape11,
-            this.lineShape10,
-            this.lineShape9,
-            this.lineShape8,
-            this.lineShape5,
-            this.lineShape7,
-            this.lineShape6});
-            this.shapeContainer3.Size = new System.Drawing.Size(145, 74);
-            this.shapeContainer3.TabIndex = 25;
-            this.shapeContainer3.TabStop = false;
-            // 
-            // lineShape5
-            // 
-            this.lineShape5.BorderWidth = 2;
-            this.lineShape5.Name = "lineShape5";
-            this.lineShape5.X1 = 72;
-            this.lineShape5.X2 = 72;
-            this.lineShape5.Y1 = -3;
-            this.lineShape5.Y2 = 63;
-            // 
-            // lineShape8
-            // 
-            this.lineShape8.BorderWidth = 2;
-            this.lineShape8.Name = "lineShape8";
-            this.lineShape8.X1 = 132;
-            this.lineShape8.X2 = 132;
-            this.lineShape8.Y1 = 1;
-            this.lineShape8.Y2 = 67;
-            // 
-            // lineShape9
-            // 
-            this.lineShape9.BorderWidth = 2;
-            this.lineShape9.Name = "lineShape9";
-            this.lineShape9.X1 = 9;
-            this.lineShape9.X2 = 135;
-            this.lineShape9.Y1 = 6;
-            this.lineShape9.Y2 = 6;
-            // 
-            // lineShape10
-            // 
-            this.lineShape10.BorderWidth = 2;
-            this.lineShape10.Name = "lineShape10";
-            this.lineShape10.X1 = 9;
-            this.lineShape10.X2 = 133;
-            this.lineShape10.Y1 = 20;
-            this.lineShape10.Y2 = 20;
-            // 
-            // lineShape11
-            // 
-            this.lineShape11.BorderWidth = 2;
-            this.lineShape11.Name = "lineShape11";
-            this.lineShape11.X1 = 9;
-            this.lineShape11.X2 = 135;
-            this.lineShape11.Y1 = 34;
-            this.lineShape11.Y2 = 34;
-            // 
-            // lineShape12
-            // 
-            this.lineShape12.BorderWidth = 2;
-            this.lineShape12.Name = "lineShape12";
-            this.lineShape12.X1 = 9;
-            this.lineShape12.X2 = 133;
-            this.lineShape12.Y1 = 48;
-            this.lineShape12.Y2 = 48;
-            // 
-            // LayerDelim
-            // 
-            this.LayerDelim.Location = new System.Drawing.Point(9, 61);
-            this.LayerDelim.MaxLength = 1;
-            this.LayerDelim.Name = "LayerDelim";
-            this.LayerDelim.Size = new System.Drawing.Size(38, 20);
-            this.LayerDelim.TabIndex = 72;
-            // 
             // linkLabel1
             // 
             this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(249, 19);
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(249, 16);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(84, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(126, 20);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Contact Support";
@@ -2229,24 +2198,18 @@
             // 
             this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(249, 37);
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.Location = new System.Drawing.Point(3, 16);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(69, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(102, 20);
             this.linkLabel2.TabIndex = 6;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "RabCab.com";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel2_LinkClicked);
             // 
-            // LabelActivate
+            // openFileDialog
             // 
-            this.LabelActivate.AutoSize = true;
-            this.LabelActivate.Location = new System.Drawing.Point(3, 17);
-            this.LabelActivate.Name = "LabelActivate";
-            this.LabelActivate.Size = new System.Drawing.Size(65, 13);
-            this.LabelActivate.TabIndex = 7;
-            this.LabelActivate.TabStop = true;
-            this.LabelActivate.Text = "Trial Version";
-            this.LabelActivate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LabelActivate_LinkClicked);
+            this.openFileDialog.FileName = "openFileDialog1";
             // 
             // SettingsComponent
             // 
@@ -2296,33 +2259,33 @@
             this.groupBox3.PerformLayout();
             this.Annotation.ResumeLayout(false);
             this.Annotation.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MarkHeight)).EndInit();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PartTextHeight)).EndInit();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DSpace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VSpace)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MarkHeight)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PartTextHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOM_RowHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOM_ColWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOM_TextHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOM_XOffset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOM_YOffset)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BOM_YOffset)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOM_XOffset)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOM_TextHeight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOM_ColWidth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOM_RowHeight)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2420,8 +2383,6 @@
         private System.Windows.Forms.CheckBox SortLayer;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox NameConv;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.GroupBox groupBox9;
@@ -2487,6 +2448,5 @@
         private System.Windows.Forms.TextBox LayerDelim;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel LabelActivate;
     }
 }

@@ -8,7 +8,6 @@ using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Internal;
 using Autodesk.AutoCAD.Runtime;
 using Autodesk.AutoCAD.Windows;
-using RabCab.Agents;
 using RabCab.Engine.AcSystem;
 using RabCab.Engine.Enumerators;
 using RabCab.Entities.Controls;
@@ -55,7 +54,7 @@ namespace RabCab.Commands.PaletteKit
             //| CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_RcLayerPal()
         {
@@ -139,7 +138,6 @@ namespace RabCab.Commands.PaletteKit
         /// </summary>
         private void CreatePal()
         {
-            if (!LicensingAgent.Check()) return;
             if (_rcPal == null)
             {
                 _rcPal = new PaletteSet(_palName, new Guid("395249C2-4C1A-4CD1-9422-B6BBA800ED32"))
@@ -380,7 +378,6 @@ namespace RabCab.Commands.PaletteKit
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
         }
 
@@ -479,7 +476,6 @@ namespace RabCab.Commands.PaletteKit
         {
             try
             {
-                if (!LicensingAgent.Check()) return;
                 var acCurDoc = Application.DocumentManager.MdiActiveDocument;
                 if (acCurDoc == null) return;
 
@@ -517,7 +513,6 @@ namespace RabCab.Commands.PaletteKit
         {
             try
             {
-                if (!LicensingAgent.Check()) return;
                 var acCurDoc = Application.DocumentManager.MdiActiveDocument;
                 if (acCurDoc == null) return;
 
@@ -549,7 +544,6 @@ namespace RabCab.Commands.PaletteKit
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
         }
 

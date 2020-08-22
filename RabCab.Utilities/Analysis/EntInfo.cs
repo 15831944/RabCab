@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="EntReader.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>03/08/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
@@ -498,7 +498,6 @@ namespace RabCab.Analysis
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
         }
 
@@ -554,7 +553,7 @@ namespace RabCab.Analysis
                 catch (Exception e)
                 {
                     Console.WriteLine(e);
-                    MailAgent.Report(e.Message);
+
                     return bestMatrix;
                 }
             }
@@ -684,7 +683,6 @@ namespace RabCab.Analysis
                                         catch (Exception e)
                                         {
                                             Console.WriteLine(e);
-                                            MailAgent.Report(e.Message);
                                         }
                                     }
                                 }
@@ -692,14 +690,12 @@ namespace RabCab.Analysis
                             catch (Exception e)
                             {
                                 Console.WriteLine(e);
-                                MailAgent.Report(e.Message);
                             }
                         }
                     }
                     catch (Exception e)
                     {
                         Console.WriteLine(e);
-                        MailAgent.Report(e.Message);
                     }
                 }
                 else
@@ -720,7 +716,6 @@ namespace RabCab.Analysis
                         catch (Exception e)
                         {
                             Console.WriteLine(e);
-                            MailAgent.Report(e.Message);
                         }
                 }
 

@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcGenViews.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/08/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
@@ -56,11 +56,10 @@ namespace RabCab.Commands.AnnotationSuite
             | CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_GenViews()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -204,7 +203,6 @@ namespace RabCab.Commands.AnnotationSuite
                 catch (Exception e)
                 {
                     Console.WriteLine(e);
-                    MailAgent.Report(e.Message);
                 }
 
                 if (modelView != null) modelView.Dispose();
@@ -238,7 +236,7 @@ namespace RabCab.Commands.AnnotationSuite
             | CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_PartsGen()
         {
@@ -382,7 +380,7 @@ namespace RabCab.Commands.AnnotationSuite
 
                             //acVport.CreateBaseViewFromVp(acSol.ObjectId, acCurEd, acCurDb, lay, acVport.CenterPoint);
 
-                            System.Threading.Thread.Sleep(300);
+                            Thread.Sleep(300);
 
                             vPorts.Add(acVport);
 
@@ -397,19 +395,13 @@ namespace RabCab.Commands.AnnotationSuite
                             // Open the Block table for read
                             var acBlkTbl = acTrans.GetObject(acCurDb.BlockTableId, OpenMode.ForWrite) as BlockTable;
 
-                            if (!acBlkTbl.Has(SettingsInternal.TagName))
-                            {
-                                MakeTag_Name(acBlkTbl, acTrans);
-                            }
+                            if (!acBlkTbl.Has(SettingsInternal.TagName)) MakeTag_Name(acBlkTbl, acTrans);
 
                             var blockName = SettingsInternal.TagName;
 
                             var acBlkRef = acBlkTableRec.InsertBlock(blockName, midInsert, acCurDb);
 
-                            if (acBlkRef != null)
-                            {
-                                UpdatePartViewSubs(acBlkRef, acSol, acCurDoc);
-                            }
+                            if (acBlkRef != null) UpdatePartViewSubs(acBlkRef, acSol, acCurDoc);
                         }
                     }
 
@@ -423,6 +415,7 @@ namespace RabCab.Commands.AnnotationSuite
                     view.CopyFrom(modelView);
                     acCurEd.SetCurrentView(view);
                 }
+
                 try
                 {
                     Thread.Sleep(300);
@@ -432,6 +425,7 @@ namespace RabCab.Commands.AnnotationSuite
                 {
                     Console.WriteLine(e);
                 }
+
                 if (modelView != null) modelView.Dispose();
 
                 // Zoom so that we can see our new layout, again with a little padding
@@ -456,7 +450,6 @@ namespace RabCab.Commands.AnnotationSuite
 
             //    acTrans.Commit();
             //}
-
         }
 
         public void UpdatePartViewSubs(BlockReference acBlkRef, Entity acEnt, Document acCurDoc)
@@ -550,7 +543,7 @@ namespace RabCab.Commands.AnnotationSuite
                 Justify = AttachmentPoint.MiddleCenter,
                 AlignmentPoint = new Point3d(-halfTail + halfBoxLength, textMount, 0),
                 Prompt = "NAME:",
-                Tag =  "NAME",
+                Tag = "NAME",
                 TextString = "[NAME]",
                 Height = textHeight,
                 LockPositionInBlock = true
@@ -561,14 +554,14 @@ namespace RabCab.Commands.AnnotationSuite
                 Justify = AttachmentPoint.MiddleCenter,
                 AlignmentPoint = new Point3d(-halfTail + halfBoxLength, -textMount, 0),
                 Prompt = "QTY:",
-                Tag ="QTY",
+                Tag = "QTY",
                 TextString = "QTY: " + "[QTY]",
                 Height = textHeight,
                 LockPositionInBlock = true
             };
 
-            var ents = new Entity[] { boxPoly, divPoly };
-            var atts = new[] { attView, attScale, attPart, attQty };
+            var ents = new Entity[] {boxPoly, divPoly};
+            var atts = new[] {attView, attScale, attPart, attQty};
 
             var acBlkTblRec = MakeBlock(SettingsInternal.TagName, ents, atts);
 
@@ -604,17 +597,11 @@ namespace RabCab.Commands.AnnotationSuite
                 Origin = Point3d.Origin
             };
 
-            foreach (var ent in ents)
-            {
-                acBlkTblRec.AppendEntity(ent);
-            }
+            foreach (var ent in ents) acBlkTblRec.AppendEntity(ent);
 
             if (atts == null) return acBlkTblRec;
 
-            foreach (var acAttDef in atts)
-            {
-                acBlkTblRec.AppendEntity(acAttDef);
-            }
+            foreach (var acAttDef in atts) acBlkTblRec.AppendEntity(acAttDef);
 
             return acBlkTblRec;
         }
@@ -784,7 +771,6 @@ namespace RabCab.Commands.AnnotationSuite
             catch (System.Exception e)
             {
                 acCurEd.WriteMessage(e.Message);
-                MailAgent.Report(e.Message);
             }
 
             return viewports;

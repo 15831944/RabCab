@@ -141,7 +141,6 @@ namespace RabCab.Extensions
 
             // Verify block table record has attribute definitions associated with it
             if (acBlkTblRec.HasAttributeDefinitions)
-            {
                 // Add attributes from the block table record
                 foreach (var objID in acBlkTblRec)
                 {
@@ -152,7 +151,6 @@ namespace RabCab.Extensions
                         var acAtt = dbObj as AttributeDefinition;
 
                         if (!acAtt.Constant)
-                        {
                             using (var acAttRef = new AttributeReference())
                             {
                                 acAttRef.SetAttributeFromBlock(acAtt, acBlkRef.BlockTransform);
@@ -160,10 +158,8 @@ namespace RabCab.Extensions
                                 acBlkRef.AttributeCollection.AppendAttribute(acAttRef);
                                 acTrans.AddNewlyCreatedDBObject(acAttRef, true);
                             }
-                        }
                     }
                 }
-            }
         }
 
         /// <summary>

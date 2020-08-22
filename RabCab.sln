@@ -5,11 +5,6 @@ VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabCab", "RabCab.Utilities\RabCab.csproj", "{12540A60-474B-4908-8781-F758ACF78931}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebugConsole", "DebugConsole\DebugConsole.csproj", "{22326B07-B7CA-43B3-A2DE-26757F37CAC4}"
-	ProjectSection(ProjectDependencies) = postProject
-		{12540A60-474B-4908-8781-F758ACF78931} = {12540A60-474B-4908-8781-F758ACF78931}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,14 +21,6 @@ Global
 		{12540A60-474B-4908-8781-F758ACF78931}.Release|Any CPU.Build.0 = Release|Any CPU
 		{12540A60-474B-4908-8781-F758ACF78931}.Release|x64.ActiveCfg = Release|Any CPU
 		{12540A60-474B-4908-8781-F758ACF78931}.Release|x64.Build.0 = Release|Any CPU
-		{22326B07-B7CA-43B3-A2DE-26757F37CAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22326B07-B7CA-43B3-A2DE-26757F37CAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22326B07-B7CA-43B3-A2DE-26757F37CAC4}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{22326B07-B7CA-43B3-A2DE-26757F37CAC4}.Debug|x64.Build.0 = Debug|Any CPU
-		{22326B07-B7CA-43B3-A2DE-26757F37CAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22326B07-B7CA-43B3-A2DE-26757F37CAC4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22326B07-B7CA-43B3-A2DE-26757F37CAC4}.Release|x64.ActiveCfg = Release|Any CPU
-		{22326B07-B7CA-43B3-A2DE-26757F37CAC4}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

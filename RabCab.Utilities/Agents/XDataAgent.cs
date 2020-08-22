@@ -389,7 +389,7 @@ namespace RabCab.Agents
                 }
                 catch (ArgumentOutOfRangeException e)
                 {
-                    //ignored
+                    Console.WriteLine(e);
                 }
             }
 

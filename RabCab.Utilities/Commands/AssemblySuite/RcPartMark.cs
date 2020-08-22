@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcPartMark.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/09/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using Autodesk.AutoCAD.ApplicationServices.Core;
@@ -49,11 +49,10 @@ namespace RabCab.Commands.AssemblySuite
             | CommandFlags.NoBlockEditor
             //| CommandFlags.NoActionRecording
             //| CommandFlags.ActionMacro
-            //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_RcMark()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -132,11 +131,12 @@ namespace RabCab.Commands.AssemblySuite
                                                     acText.Location = insPt;
                                                     acText.Attachment = AttachmentPoint.MiddleCenter;
                                                     //acText.Layer = ;
-                                                    //acText.ColorIndex = ;                           
+                                                    //acText.ColorIndex = ;
 
                                                     //Append the text
                                                     acCurDb.AppendEntity(acText, acTrans);
-                                                    acText.UpdateXData("RCMARK", Enums.XDataCode.Info, acCurDb, acTrans);
+                                                    acText.UpdateXData("RCMARK", Enums.XDataCode.Info, acCurDb,
+                                                        acTrans);
                                                 }
 
                                                 break;
@@ -144,7 +144,7 @@ namespace RabCab.Commands.AssemblySuite
 
                                             case BlockReference bRef:
                                             {
-                                                var ext = acTrans.GetExtents(new ObjectId[] {bRef.ObjectId}, acCurDb);
+                                                var ext = acTrans.GetExtents(new[] {bRef.ObjectId}, acCurDb);
                                                 var cen = ext.MinPoint.GetMidPoint(ext.MaxPoint);
 
                                                 var bName = bRef.Name;
@@ -160,11 +160,12 @@ namespace RabCab.Commands.AssemblySuite
                                                     acText.Location = insPt;
                                                     acText.Attachment = AttachmentPoint.MiddleCenter;
                                                     //acText.Layer = ;
-                                                    //acText.ColorIndex = ;                           
+                                                    //acText.ColorIndex = ;
 
                                                     //Append the text
                                                     acCurDb.AppendEntity(acText, acTrans);
-                                                    acText.UpdateXData("RCMARK", Enums.XDataCode.Info, acCurDb, acTrans);
+                                                    acText.UpdateXData("RCMARK", Enums.XDataCode.Info, acCurDb,
+                                                        acTrans);
                                                 }
 
                                                 break;
@@ -179,6 +180,5 @@ namespace RabCab.Commands.AssemblySuite
                     }
                 }
         }
-
     }
 }

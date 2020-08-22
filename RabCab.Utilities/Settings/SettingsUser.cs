@@ -44,7 +44,7 @@ namespace RabCab.Settings
         public static string ViewTemplatePath = string.Empty;
 
         public static string ExportTemplatePath =
-            @"T:\Construction\Construction Standards\STAK Machining Standards\_Templates\MachineTemplate.dwt";
+            @"";
 
         //CSV Options
         public static string NamedPartsFileName = "PartList";

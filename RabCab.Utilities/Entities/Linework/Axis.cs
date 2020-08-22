@@ -1,7 +1,6 @@
 ﻿using System;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Geometry;
-using RabCab.Agents;
 using RabCab.Calculators;
 using RabCab.Extensions;
 
@@ -104,7 +103,6 @@ namespace RabCab.Entities.Linework
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
             }
         }
 

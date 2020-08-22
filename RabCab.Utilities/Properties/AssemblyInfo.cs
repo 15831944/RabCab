@@ -34,7 +34,7 @@ using RabCab.Initialization;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CraterSpace")]
 [assembly: AssemblyProduct("RabCab")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -89,8 +89,6 @@ using RabCab.Initialization;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
 [assembly: Guid("12540b60-474b-4908-8781-f758acf78931")]
-
-[assembly: CommandClass(typeof(Debugging))]
 
 //Analysis Suite
 [assembly: CommandClass(typeof(RcDump))]

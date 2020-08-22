@@ -57,7 +57,6 @@ namespace RabCab.Agents
                         catch (Exception e)
                         {
                             Console.WriteLine(e);
-                            MailAgent.Report(e.Message);
                             throw;
                         }
 
@@ -89,7 +88,6 @@ namespace RabCab.Agents
                         catch (Exception e)
                         {
                             Console.WriteLine(e);
-                            MailAgent.Report(e.Message);
                             throw;
                         }
 
@@ -168,7 +166,6 @@ namespace RabCab.Agents
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MailAgent.Report(e.Message);
                 throw;
             }
         }

@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="Solid3dExtensions.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>03/08/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using System;
@@ -1324,7 +1324,6 @@ namespace RabCab.Extensions
                         catch (AcBr.Exception e)
                         {
                             Console.WriteLine(e);
-                            MailAgent.Report(e.Message);
                         }
 
                     interferes = bounds1.CheckInterference(bounds2);
@@ -1531,7 +1530,7 @@ namespace RabCab.Extensions
                 acCurDb.AddLayer(RcAnno, LayerColorRcAnno, RcAnnoLt,
                     acTrans);
 
-                //Set the text height                   
+                //Set the text height
                 acText.TextHeight = LayTextHeight;
                 acText.Layer = RcAnno;
                 acText.ColorIndex = 256;

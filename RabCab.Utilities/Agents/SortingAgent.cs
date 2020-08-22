@@ -255,7 +255,6 @@ namespace RabCab.Agents
                     catch (Exception e)
                     {
                         Console.WriteLine(e);
-                        MailAgent.Report(e.Message);
                     }
                 }
                 else
@@ -267,7 +266,6 @@ namespace RabCab.Agents
                     catch (Exception e)
                     {
                         Console.WriteLine(e);
-                        MailAgent.Report(e.Message);
                     }
                 }
             }
@@ -452,7 +450,6 @@ namespace RabCab.Agents
                 catch (Autodesk.AutoCAD.Runtime.Exception e)
                 {
                     Console.WriteLine(e);
-                    MailAgent.Report(e.Message);
                     throw;
                 }
         }
@@ -543,8 +540,8 @@ namespace RabCab.Agents
                 }
                 catch (Autodesk.AutoCAD.Runtime.Exception e)
                 {
-                    throw;
                     Console.WriteLine(e);
+                    throw;
                 }
         }
 
@@ -657,7 +654,6 @@ namespace RabCab.Agents
                 catch (Autodesk.AutoCAD.Runtime.Exception e)
                 {
                     Console.WriteLine(e);
-                    MailAgent.Report(e.Message);
                 }
         }
 
@@ -763,7 +759,7 @@ namespace RabCab.Agents
                 catch (Autodesk.AutoCAD.Runtime.Exception e)
                 {
                     Console.WriteLine(e);
-                    MailAgent.Report(e.Message);
+
                     throw;
                 }
             }
@@ -1112,7 +1108,7 @@ namespace RabCab.Agents
                                       " | TECH: " + EnumAgent.GetNameOf(e.ProdType) +
                                       " | QTY PER ASM: " + e.RcQtyTotal;
                     acText.Layer = "Defpoints";
-                    //acText.ColorIndex = ;                           
+                    //acText.ColorIndex = ;
 
                     //ParseAndFill the insertion point and text alignment
                     double zPt = 0;

@@ -1,12 +1,12 @@
 ﻿// -----------------------------------------------------------------------------------
 //     <copyright file="RcPartMark.cs" company="CraterSpace">
-//     Copyright (c) 2019 CraterSpace - All Rights Reserved 
+//     Copyright (c) 2019 CraterSpace - All Rights Reserved
 //     </copyright>
 //     <author>Zach Ayers</author>
 //     <date>04/09/2019</date>
-//     Description:    
-//     Notes:  
-//     References:          
+//     Description:
+//     Notes:
+//     References:
 // -----------------------------------------------------------------------------------
 
 using Autodesk.AutoCAD.ApplicationServices.Core;
@@ -48,13 +48,12 @@ namespace RabCab.Commands.AssemblySuite
             //| CommandFlags.NoHistory
             //| CommandFlags.NoUndoMarker
             | CommandFlags.NoBlockEditor
-        //| CommandFlags.NoActionRecording
-        //| CommandFlags.ActionMacro
-        //| CommandFlags.NoInferConstraint 
+            //| CommandFlags.NoActionRecording
+            //| CommandFlags.ActionMacro
+            //| CommandFlags.NoInferConstraint
         )]
         public void Cmd_RcMark()
         {
-            if (!LicensingAgent.Check()) return;
             var acCurDoc = Application.DocumentManager.MdiActiveDocument;
             var acCurDb = acCurDoc.Database;
             var acCurEd = acCurDoc.Editor;
@@ -63,8 +62,8 @@ namespace RabCab.Commands.AssemblySuite
             AcVars.CmdEcho = Enums.CmdEcho.Off;
 
             // Set up our selection to only select 3D solids
-            var pso = new PromptSelectionOptions { MessageForAdding = "\nSelect viewports to shrink: " };
-            var sf = new SelectionFilter(new[] { new TypedValue((int)DxfCode.Start, "VIEWPORT") });
+            var pso = new PromptSelectionOptions {MessageForAdding = "\nSelect viewports to shrink: "};
+            var sf = new SelectionFilter(new[] {new TypedValue((int) DxfCode.Start, "VIEWPORT")});
 
             //Get the 3d Solid Selection
             var res = acCurEd.GetSelection(pso, sf);
@@ -87,8 +86,6 @@ namespace RabCab.Commands.AssemblySuite
                             }
 
                             var largestPart = ObjectId.Null;
-                            var cenView = new Point2d();
-                            var largestExt = new Extents2d();
 
                             using (var psVp = acTrans.GetObject(objId, OpenMode.ForRead) as Viewport)
                             {
@@ -107,23 +104,23 @@ namespace RabCab.Commands.AssemblySuite
                                         switch (dbObj)
                                         {
                                             case Solid3d acSol:
-                                                {
-                                                    var solCen = acSol.MassProperties.Centroid;
-                                                    var solExt = acSol.GeometricExtents;
-                                                    
-                                                   //TODO finish
+                                            {
+                                                var solCen = acSol.MassProperties.Centroid;
+                                                var solExt = acSol.GeometricExtents;
 
-                                                    break;
-                                                }
+                                                //TODO finish
+
+                                                break;
+                                            }
 
                                             case BlockReference bRef:
-                                                {
-                                                    var ext = acTrans.GetExtents(new ObjectId[] { bRef.ObjectId }, acCurDb);
-                                                    var cen = ext.MinPoint.GetMidPoint(ext.MaxPoint);
+                                            {
+                                                var ext = acTrans.GetExtents(new[] {bRef.ObjectId}, acCurDb);
+                                                var cen = ext.MinPoint.GetMidPoint(ext.MaxPoint);
 
 
-                                                    break;
-                                                }
+                                                break;
+                                            }
                                         }
                                     }
                                 }
@@ -134,6 +131,5 @@ namespace RabCab.Commands.AssemblySuite
                     }
                 }
         }
-
     }
 }
